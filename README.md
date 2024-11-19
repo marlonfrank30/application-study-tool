@@ -52,7 +52,7 @@ cd application-study-tool/yaml
 # Edit the following file with Grafana variables as required
 env-configmap.yaml
 # Edit the following file with device secrets as required (see "Configure Device Secrets" below)
-env.device-secrets-configmap.yaml
+env-device-secrets-configmap.yaml
 # Edit the default settings for your environment as required
 kubectl create -f yaml/ -n application-study-tool
 # Check the pods status
