@@ -48,13 +48,14 @@ Clone the repo or download source tarball from the [release](https://github.com/
 ```shell
 # Clone the repo
 git clone https://github.com/f5devcentral/application-study-tool.git
-cd application-study-tool
+cd application-study-tool/yaml
 # Edit the following file with Grafana variables as required
-.env-configmap.yaml
+env-configmap.yaml
 # Edit the following file with device secrets as required (see "Configure Device Secrets" below)
-.env.device-secrets-configmap.yaml
+env.device-secrets-configmap.yaml
 # Edit the default settings for your environment as required
 kubectl create -f yaml/ -n application-study-tool
+# Check the pods status
 oc get pods -n application-study-tool
 NAME                              READY   STATUS             RESTARTS          AGE
 grafana-7949988c54-9cdsh          1/1     Running            0                 15h
