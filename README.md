@@ -54,7 +54,12 @@ cp .env-example .env
 # Edit the following file with device secrets as required (see "Configure Device Secrets" below)
 cp .env.device-secrets-example .env.device-secrets
 # Edit the default settings for your environment as required
-kubectl create -f yaml/
+kubectl create -f yaml/ -n application-study-tool
+oc get pods -n application-study-tool
+NAME                              READY   STATUS             RESTARTS          AGE
+grafana-7949988c54-9cdsh          1/1     Running            0                 15h
+otel-collector-6589ffc6bd-4z7hv   1/1     Running            0                 15h
+prometheus-644d6bd9d7-6gtp5       1/1     Running            0                 15h
 ```
 
 ## Configuration
