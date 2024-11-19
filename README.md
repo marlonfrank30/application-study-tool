@@ -47,7 +47,7 @@ Clone the repo or download source tarball from the [release](https://github.com/
 
 ```shell
 # Clone the repo
-git clone https://github.com/f5devcentral/application-study-tool.git
+git clone https://github.com/marlonfrank30/application-study-tool.git
 cd application-study-tool/yaml
 # Edit the following file with Grafana variables as required
 env-configmap.yaml
