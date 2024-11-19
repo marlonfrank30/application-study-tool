@@ -54,15 +54,7 @@ cp .env-example .env
 # Edit the following file with device secrets as required (see "Configure Device Secrets" below)
 cp .env.device-secrets-example .env.device-secrets
 # Edit the default settings for your environment as required
-# (see "Configure Default Device Settings" below)
-vi ./config/ast_defaults.yaml
-# Edit the config file with device / connection info
-# (see "Configure Devices To Scrape" below)
-vi ./config/bigip_receivers.yaml
-# Run the configuration generator
-docker run --rm -it -w /app -v ${PWD}:/app --entrypoint /app/src/bin/init_entrypoint.sh python:3.12.6-slim-bookworm --generate-config
-# Start the tool
-docker-compose up
+kubectl create -f yaml/
 ```
 
 ## Configuration
